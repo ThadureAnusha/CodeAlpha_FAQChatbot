@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="bot-avatar">🤖</div>
+      <div>
+        <h1>FAQ Assistant</h1>
+        <p class="online">● Online — Ask me anything!</p>
+      </div>
+    </div>
+
+    <!-- Suggested Questions -->
+    <div class="suggestions">
+      <p class="suggest-label">💡 Try asking:</p>
+      <div class="suggest-btns" id="suggestBtns"></div>
+    </div>
+
+    <!-- Chat Window -->
+    <div class="chat-window" id="chatWindow">
+      <div class="message bot-msg">
+        <span class="avatar">🤖</span>
+        <div class="bubble">
+          Hello! I am your FAQ Assistant. Ask me anything about our services, products, or policies. I am here to help! 😊
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="input-area">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Type your question here..."
+        autocomplete="off"
+      />
+      <button id="sendBtn">Send ➤</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
